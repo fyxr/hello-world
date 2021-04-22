@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="head">
-       <Info :info="info" />
+       <Info class="top" :info="info" />
     </div>
   </div>
 </template>
@@ -40,4 +40,17 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.head {
+  margin: auto;
+  align-content: center;
+  width: 85%;
+  max-width: 1500px;
+}
+
+.top {
+  text-align: center;
+  font-size: 2vw;
+}
+
 </style>
