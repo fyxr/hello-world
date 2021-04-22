@@ -1,18 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="head">
+       <Info :info="info" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Info from './components/Info'
 
 export default {
+
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Info
+  },
+  data() {
+    return {
+      info: Object
+    }
+  },
+  created() {
+    this.info = {
+      name: 'Justin Garcia',
+    },
+    this.img = {
+      src: "/mnt/c/Users/Justin/Pictures/Camera Roll/Self potrait.jpg"
+    }
+  },
 }
 </script>
 
